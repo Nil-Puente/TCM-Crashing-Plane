@@ -474,6 +474,38 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _direction: {x: -1, y: 0}
   _displacementSpeed: 4
+--- !u!1 &798979258
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 798979259}
+  m_Layer: 0
+  m_Name: CoinSpawner
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &798979259
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 798979258}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.135198, y: 0.28758645, z: -0.01894996}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1001185160}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &841014539
 GameObject:
   m_ObjectHideFlags: 0
@@ -579,6 +611,7 @@ GameObject:
   - component: {fileID: 1001185158}
   - component: {fileID: 1001185161}
   - component: {fileID: 1001185162}
+  - component: {fileID: 1001185163}
   m_Layer: 0
   m_Name: medalGold
   m_TagString: Untagged
@@ -685,12 +718,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1001185157}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.06, y: 1.01, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0.9248018, y: 0.72241354, z: 0.01894996}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 798979259}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1001185161
 MonoBehaviour:
@@ -716,6 +749,18 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 8e67c56c6e6725741a24fcc502f9a406, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1001185163
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1001185157}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a091a5215a74c248a9a96c1536a5ae5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &1161192907
@@ -1519,4 +1564,4 @@ SceneRoots:
   - {fileID: 1873679471}
   - {fileID: 393404285}
   - {fileID: 1749260041}
-  - {fileID: 1001185160}
+  - {fileID: 798979259}
